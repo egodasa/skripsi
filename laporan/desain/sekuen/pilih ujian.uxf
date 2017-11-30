@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>780</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>title: Pilih Ujian
+//_alpha:A~id1_|_beta:B~id2_|_gamma:G~id3_
+//id1-&gt;&gt;id2:id1,id2
+//id2-/&gt;id1:async Msg.
+//id3-&gt;&gt;&gt;id1:id1,id3
+//id1.&gt;id3:id1,id3:async return Msg
+//id1-&gt;id1:id1:self
+
+_Mahasiswa~A_|_FpilihUjian~F|_CpilihUjian~C_|_EpilihUjian~E_
+A-&gt;&gt;&gt;F:A,F: 1: buka halaman pilih ujian()    
+F-&gt;&gt;&gt;C:F,C: 2: getListUjian()
+C-&gt;&gt;&gt;E:C,E: 3: getListUjian()
+E-&gt;&gt;&gt;C:E,C: 4: return listUjian()
+C-&gt;&gt;&gt;F:C,F: 5: return listUjian()
+F-&gt;&gt;&gt;A:F,A: 6: tampilkan list ujian()
+A-&gt;&gt;&gt;F:A,F: 7: pilih ujian()
+A-&gt;&gt;&gt;F:A,F: 8: klik login()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

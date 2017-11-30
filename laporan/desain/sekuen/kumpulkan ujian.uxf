@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>780</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>title: Kumpulkan Ujian
+//_alpha:A~id1_|_beta:B~id2_|_gamma:G~id3_
+//id1-&gt;&gt;id2:id1,id2
+//id2-/&gt;id1:async Msg.
+//id3-&gt;&gt;&gt;id1:id1,id3
+//id1.&gt;id3:id1,id3:async return Msg
+//id1-&gt;id1:id1:self
+
+_Mahasiswa~A_|_CKumpulkanUjian~P_|_EkumpulkanUjian~E_|_Login~L_
+A-&gt;&gt;&gt;P:A,P: 1: Klik kumpulkan ujian()
+P-&gt;&gt;&gt;P:P: 2: kumpulkanUjian()
+P-&gt;&gt;&gt;E:P,E: 3: simpanUjian()
+E-&gt;&gt;&gt;L:E,L: 4: panggil halaman login()
+L-&gt;&gt;&gt;A:L,A: 5: tampilkan halaman login()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

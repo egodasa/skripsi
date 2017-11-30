@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>72</x>
+      <y>18</y>
+      <w>702</w>
+      <h>612</h>
+    </coordinates>
+    <panel_attributes>title: Kelola Jenis Soal
+
+_Admin~A_|_FkelolaJenisSoal~F_|_CkelolaJenisSoal~C_|_EkelolaJenisSoal~E_
+A-&gt;&gt;&gt;F:A,F: 1: Akses kelola jenis soal() 
+F-&gt;&gt;&gt;C:F,C: 2: getData()
+C-&gt;&gt;&gt;E:C,E: 3: getListData()
+E-&gt;&gt;&gt;C:E,C: 4: return listData()
+C-&gt;&gt;&gt;F:C,F: 5: return listData()
+C-&gt;&gt;&gt;A:C,A: 6: tampilkan daftar jenis soal()
+A-&gt;&gt;&gt;F:A,F: 7: Entri data jenis soal()
+F-&gt;&gt;&gt;F:F: 8: validasi data()
+A-&gt;&gt;&gt;F:A,F: 9: Klik tombol simpan()
+F-&gt;&gt;&gt;C:F,C: 10: submitData()
+C-&gt;&gt;&gt;E:C,E: 11: addData()
+E-&gt;&gt;&gt;C:E,C: 12: return newData()
+C-&gt;&gt;&gt;F:C,F: 13: return newData()
+F-&gt;&gt;&gt;A:F,A: 14: tampilkan data baru()
+A-&gt;&gt;&gt;F:F,A: 15: klik tombol hapus()
+F-&gt;&gt;&gt;C:F,C: 16: deleteData()
+E-&gt;&gt;&gt;C:E,C: 17: return newData()
+C-&gt;&gt;&gt;F:C,F: 18: return newData()
+F-&gt;&gt;&gt;A:F,A: 19: tampilkan data baru()
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

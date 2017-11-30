@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>15</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>165</x>
+      <y>45</y>
+      <w>540</w>
+      <h>255</h>
+    </coordinates>
+    <panel_attributes>title: Petunjuk Ujian
+//_alpha:A~id1_|_beta:B~id2_|_gamma:G~id3_
+//id1-&gt;&gt;id2:id1,id2
+//id2-/&gt;id1:async Msg.
+//id3-&gt;&gt;&gt;id1:id1,id3
+//id1.&gt;id3:id1,id3:async return Msg
+//id1-&gt;id1:id1:self
+
+_Mahasiswa~A_|_PetunjukUjian~P_|
+A-&gt;&gt;&gt;P:A,P: 1: Buka petunjuk ujian()
+P-&gt;&gt;&gt;A:A,P: 2: Tampilkan petunjuk ujian()
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

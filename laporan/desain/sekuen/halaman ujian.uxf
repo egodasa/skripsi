@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>40</x>
+      <y>24</y>
+      <w>552</w>
+      <h>256</h>
+    </coordinates>
+    <panel_attributes>title: Halaman Ujian
+//_alpha:A~id1_|_beta:B~id2_|_gamma:G~id3_
+//id1-&gt;&gt;id2:id1,id2
+//id2-/&gt;id1:async Msg.
+//id3-&gt;&gt;&gt;id1:id1,id3
+//id1.&gt;id3:id1,id3:async return Msg
+//id1-&gt;id1:id1:self
+
+_Mahasiswa~A_|_FhalamanUjian~F_|_ChalamanUjian~C_|_EhalamanUjian~E_
+A-&gt;&gt;&gt;F:A,F: 1: buka halamanUjian()    
+F-&gt;&gt;&gt;C:F,C: 2: genLjk()
+C-&gt;&gt;&gt;E:C,E: 3: getListSoal()
+E-&gt;&gt;&gt;C:E,C: 4: return listSoal()
+C-&gt;&gt;&gt;C:C: 5: showSoal()
+C-&gt;&gt;&gt;F:C,F: 6: return soal()
+F-&gt;&gt;&gt;A:F,A: 7: tampilkan soal()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

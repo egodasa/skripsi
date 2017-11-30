@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
-  <zoom_level>8</zoom_level>
+  <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>784</x>
-      <y>608</y>
-      <w>176</w>
-      <h>160</h>
+      <x>637</x>
+      <y>511</y>
+      <w>154</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>KelolaMahasiswa
 --
 id_mahasiswa : int(11)
 nobp : varchar(15)
 nm_mahasiswa : varchar(100)
-status : Boolean
+status_mahasiswa : smallint
 --
 +getData()
 +getDataDetail(id: int)
@@ -27,17 +27,17 @@ status : Boolean
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>592</x>
-      <y>0</y>
-      <w>144</w>
-      <h>160</h>
+      <x>462</x>
+      <y>511</y>
+      <w>126</w>
+      <h>140</h>
     </coordinates>
     <panel_attributes>KelolaDosen
 --
 id_dosen : int(11)
 nidn : varchar(11)
 nm_dosen : varchar(100)
-status : Boolean
+status_dosen : smallint
 --
 +getData()
 +getDataDetail(id: int)
@@ -51,10 +51,10 @@ status : Boolean
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>600</x>
-      <y>416</y>
-      <w>152</w>
-      <h>152</h>
+      <x>658</x>
+      <y>182</y>
+      <w>133</w>
+      <h>133</h>
     </coordinates>
     <panel_attributes>KelolaKelas
 --
@@ -73,10 +73,10 @@ nm_kelas : varchar(10)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>800</x>
-      <y>0</y>
-      <w>152</w>
-      <h>168</h>
+      <x>651</x>
+      <y>7</y>
+      <w>133</w>
+      <h>161</h>
     </coordinates>
     <panel_attributes>KelolaMatkul
 --
@@ -85,6 +85,7 @@ kd_matkul: varchar(15)
 nm_matkul: varchar(100)
 sks: smallint
 smt: smallint
+status_matkul : smallint
 --
 +getData()
 +getDataDetail(id: int)
@@ -98,10 +99,10 @@ smt: smallint
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>400</x>
-      <y>0</y>
-      <w>144</w>
-      <h>136</h>
+      <x>469</x>
+      <y>7</y>
+      <w>126</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>KelolaJenisUjian
 --
@@ -120,10 +121,10 @@ nm_jujian : varchar(10)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>0</y>
-      <w>144</w>
-      <h>136</h>
+      <x>322</x>
+      <y>7</y>
+      <w>126</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>KelolaJenisSoal
 --
@@ -142,10 +143,10 @@ nm_jsoal : varchar(10)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>400</y>
-      <w>152</w>
-      <h>184</h>
+      <x>154</x>
+      <y>483</y>
+      <w>133</w>
+      <h>161</h>
     </coordinates>
     <panel_attributes>KelolaSoal
 --
@@ -168,69 +169,25 @@ jawaban: text
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>808</x>
-      <y>400</y>
-      <w>144</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>KelolaKuliahMahasiswa
---
-id_kmhs : int(11)
-id_kuliah : int(11)
-nobp: varchar(15)
-status: Boolean
---
-+getData()
-+getDataDetail(id: int)
-+cariData()
-+resetCariData()
-+submitData()
-+deleteData(id: int)
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>600</x>
-      <y>208</y>
-      <w>136</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>KelolaKuliah
---
-id_kuliah : int(11)
-id_mdosen : int(11)
-id_kelas : int(11)
-tahun_akademik: int(5)
---
-+getData()
-+getDataDetail(id: int)
-+cariData()
-+resetCariData()
-+submitData()
-+deleteData(id: int)
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>384</x>
-      <y>208</y>
-      <w>152</w>
-      <h>208</h>
+      <x>406</x>
+      <y>196</y>
+      <w>147</w>
+      <h>231</h>
     </coordinates>
     <panel_attributes>KelolaUjian
 --
-id_ujian : int(11)
-id_kuliah : int(11)
-hari : Data
-id_jujian: smallint
-id_jsoal: smallint
-mulai: Time
-selesai: Time
-deskripsi: varchar(100)
+id_ujian :	varchar(40)	 
+kd_matkul : varchar(15)	 
+nidn : varchar(11)	 
+hari : date	 
+mulai : time
+selesai : time 
+deskripsi : varchar(100)
+status_ujian : smallint	 
+id_jujian : smallint	 
+id_jsoal : smallint	 
+tahun_akademik : varchar(6)	 
+id_kelas : smallint
 --
 +getData()
 +getDataDetail(id: int)
@@ -244,15 +201,15 @@ deskripsi: varchar(100)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>192</x>
-      <y>400</y>
-      <w>136</w>
-      <h>208</h>
+      <x>154</x>
+      <y>210</y>
+      <w>119</w>
+      <h>182</h>
     </coordinates>
     <panel_attributes>KelolaSoalUjian
 --
 id_sujian: int(11)
-id_ujian: int(11)
+id_ujian: varchar(40)
 id_soal : int(11)
 isi_soal : text
 pilihanGanda: Object
@@ -272,16 +229,16 @@ jawaban: text
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>584</x>
-      <y>608</y>
-      <w>176</w>
-      <h>144</h>
+      <x>637</x>
+      <y>329</y>
+      <w>154</w>
+      <h>126</h>
     </coordinates>
     <panel_attributes>KelolaPesertaUjian
 --
-id_ujian: int(11)
+id_peserta: int(11)
 nobp : varchar(15)
-nm_mahasiswa : varchar(100)
+id_ujian varchar(40)
 status : Boolean
 --
 +getData()
@@ -294,10 +251,10 @@ status : Boolean
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>8</y>
-      <w>168</w>
-      <h>216</h>
+      <x>154</x>
+      <y>7</y>
+      <w>147</w>
+      <h>189</h>
     </coordinates>
     <panel_attributes>CekJawaban
 --
@@ -321,15 +278,15 @@ nm_mahasiswa: varchar(100)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>240</y>
-      <w>168</w>
-      <h>136</h>
+      <x>301</x>
+      <y>532</y>
+      <w>147</w>
+      <h>119</h>
     </coordinates>
     <panel_attributes>HasilUjian
 --
 id_hasil: int(11)
-id_ujian: int(11)
+id_ujian: varchar(40)
 nobp : varchar(15)
 nm_mahasiswa: varchar(100)
 nilai : smallint
@@ -341,103 +298,146 @@ nilai : smallint
     <additional_attributes/>
   </element>
   <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>376</x>
-      <y>568</y>
-      <w>168</w>
-      <h>192</h>
-    </coordinates>
-    <panel_attributes>pelaksanaanUjian
---
-id_ujian: int(11)
-id_jawaban: int(11)
-infoUjian: Object
-posisiSoal: int
-totalBobot: int
-bobot: int
-nobp : varchar(15)
-nm_mahasiswa: varchar(100)
---
-+setWaktu()
-+genLjk()
-+showSoal(x: int)
-+kumpulkanUjian()</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>800</x>
-      <y>208</y>
-      <w>144</w>
-      <h>152</h>
-    </coordinates>
-    <panel_attributes>KelolaMatkulDosen
---
-id_mdosen : int(11)
-nidn : varchar(11)
-kd_matkul : varchar(15)
---
-+getData()
-+getDataDetail(id: int)
-+cariData()
-+resetCariData()
-+submitData()
-+deleteData(id: int)
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>728</x>
-      <y>288</y>
-      <w>88</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=1
-m2=1</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>528</x>
-      <y>272</y>
-      <w>88</w>
-      <h>32</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=1
-m2=1</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
-  </element>
-  <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>648</x>
-      <y>344</y>
-      <w>40</w>
-      <h>88</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=  1
-m2=  1*</panel_attributes>
-    <additional_attributes>24;24;24;72</additional_attributes>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>712</x>
-      <y>304</y>
-      <w>112</w>
-      <h>112</h>
+      <x>532</x>
+      <y>357</y>
+      <w>118</w>
+      <h>34</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1*</panel_attributes>
-    <additional_attributes>24;24;96;96</additional_attributes>
+    <additional_attributes>21;21;105;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>532</x>
+      <y>203</y>
+      <w>139</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>21;63;126;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>532</x>
+      <y>84</y>
+      <w>132</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>21;112;119;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>462</x>
+      <y>105</y>
+      <w>90</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>21;91;77;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>364</x>
+      <y>105</y>
+      <w>83</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>70;91;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>280</x>
+      <y>175</y>
+      <w>139</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>126;119;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>252</x>
+      <y>280</y>
+      <w>167</w>
+      <h>69</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>154;56;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>693</x>
+      <y>434</y>
+      <w>34</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>21;21;21;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>455</x>
+      <y>406</y>
+      <w>83</w>
+      <h>118</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>21;21;70;105</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>343</x>
+      <y>406</y>
+      <w>118</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>105;21;21;126</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>182</x>
+      <y>371</y>
+      <w>34</w>
+      <h>125</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1*</panel_attributes>
+    <additional_attributes>21;21;21;112</additional_attributes>
   </element>
 </diagram>

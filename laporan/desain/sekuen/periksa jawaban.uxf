@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><diagram program="umlet" version="13.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>28</x>
+      <y>28</y>
+      <w>861</w>
+      <h>308</h>
+    </coordinates>
+    <panel_attributes>title: Periksa Jawaban
+//_alpha:A~id1_|_beta:B~id2_|_gamma:G~id3_
+//id1-&gt;&gt;id2:id1,id2
+//id2-/&gt;id1:async Msg.
+//id3-&gt;&gt;&gt;id1:id1,id3
+//id1.&gt;id3:id1,id3:async return Msg
+//id1-&gt;id1:id1:self
+
+_Dosen~A_|_FperiksaJawaban~P_|_CperiksaJawaban~C_|_EperiksaJawaban~H_|_HasilUjian~E_
+A-&gt;&gt;&gt;P:A,P: 1: buka halaman periksa jawaban()    
+P-&gt;&gt;&gt;C:P,C: 2: getJawaban()
+P-&gt;&gt;&gt;H:P,H: 3: getJawaban()
+H-&gt;&gt;&gt;A:A,H: 4: tampilkan jawaban()
+A-&gt;&gt;&gt;P:A,P: 5: klik tombol simpan
+P-&gt;&gt;&gt;C:P,C: 6: simpanBobot()
+P-&gt;&gt;&gt;A:P,A: 7: tampilkan total bobot()
+A-&gt;&gt;&gt;P:A,P: 8: klik tombol selesai periksa()
+P-&gt;&gt;&gt;H:P,H: 9: simpanHasilPeriksa()
+H-&gt;&gt;&gt;E:E,H: 10: hasil ujian()
+E-&gt;&gt;&gt;A:A,E: 11: tampilkan hasil ujian()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
