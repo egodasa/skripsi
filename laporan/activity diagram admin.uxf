@@ -3,245 +3,24 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
+      <x>477</x>
       <y>135</y>
       <w>27</w>
       <h>63</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
+    <panel_attributes>lt=&lt;-
+group=1</panel_attributes>
     <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>432</x>
-      <y>180</y>
-      <w>90</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>login
-bg=white</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>468</x>
-      <y>207</y>
-      <w>27</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>459</x>
-      <y>243</y>
-      <w>36</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>bg=white
-type=decision</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>468</x>
-      <y>126</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>type=initial</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>369</x>
-      <y>189</y>
-      <w>108</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-T</panel_attributes>
-    <additional_attributes>70.0;10.0;10.0;10.0;10.0;80.0;100.0;80.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>468</x>
-      <y>270</y>
-      <w>36</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-Y</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLSyncBarHorizontal</id>
-    <coordinates>
-      <x>207</x>
-      <y>306</y>
-      <w>558</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>{joinSpec=
-date is on or 
-after July 1st
-and the exam 
-is passed}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSyncBarHorizontal</id>
-    <coordinates>
-      <x>207</x>
-      <y>396</y>
-      <w>558</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>{joinSpec=
-date is on or 
-after July 1st
-and the exam 
-is passed}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>432</x>
-      <y>432</y>
-      <w>90</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Logout
-bg=white</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLSpecialState</id>
-    <coordinates>
-      <x>468</x>
-      <y>504</y>
-      <w>18</w>
-      <h>18</h>
-    </coordinates>
-    <panel_attributes>type=final</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>468</x>
-      <y>459</y>
-      <w>27</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>468</x>
-      <y>396</y>
-      <w>27</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>297</x>
-      <y>297</y>
-      <w>27</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>261</x>
-      <y>333</y>
-      <w>90</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Kelola 
-Mahasiswa
-bg=white
-group=1</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>297</x>
-      <y>360</y>
-      <w>27</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>387</x>
-      <y>360</y>
-      <w>27</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLState</id>
-    <coordinates>
-      <x>360</x>
-      <y>333</y>
-      <w>72</w>
-      <h>36</h>
-    </coordinates>
-    <panel_attributes>Kelola
-Dosen
-bg=white
-group=1</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>387</x>
-      <y>297</y>
-      <w>27</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
       <x>441</x>
-      <y>333</y>
-      <w>72</w>
+      <y>180</y>
+      <w>90</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Kelola
-Matkul
+    <panel_attributes>login
 bg=white
 group=1</panel_attributes>
     <additional_attributes/>
@@ -249,8 +28,8 @@ group=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>468</x>
-      <y>297</y>
+      <x>477</x>
+      <y>207</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
@@ -259,91 +38,421 @@ group=1</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLSpecialState</id>
     <coordinates>
       <x>468</x>
-      <y>360</y>
+      <y>243</y>
+      <w>36</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>bg=white
+type=decision
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>477</x>
+      <y>126</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=initial
+group=1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>189</y>
+      <w>108</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+T
+group=1</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0;10.0;80.0;100.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>270</y>
+      <w>36</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+Y
+group=1</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>297</x>
+      <y>306</y>
+      <w>531</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>297</x>
+      <y>396</y>
+      <w>531</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>441</x>
+      <y>432</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Logout
+bg=white
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>477</x>
+      <y>504</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>type=final
+group=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>459</y>
+      <w>27</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+group=2</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>396</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
+group=2</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>387</x>
+      <y>306</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>351</x>
+      <y>342</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Kelola 
+Mahasiswa
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>387</x>
+      <y>369</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>369</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>450</x>
+      <y>342</y>
+      <w>72</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Kelola
+Dosen
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>477</x>
+      <y>306</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
       <x>531</x>
-      <y>333</y>
-      <w>90</w>
+      <y>342</y>
+      <w>72</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Kelola Jenis
-Soal
-bg=white
-group=1</panel_attributes>
+    <panel_attributes>Kelola
+Matkul
+bg=white</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>297</y>
+      <x>558</x>
+      <y>306</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>567</x>
-      <y>360</y>
+      <x>558</x>
+      <y>369</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>666</x>
-      <y>360</y>
-      <w>27</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>639</x>
-      <y>333</y>
-      <w>72</w>
+      <x>621</x>
+      <y>342</y>
+      <w>90</w>
       <h>36</h>
     </coordinates>
-    <panel_attributes>Kelola
-Kelas
-bg=white
-group=1</panel_attributes>
+    <panel_attributes>Kelola Jenis
+Soal
+bg=white</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>666</x>
-      <y>297</y>
+      <x>657</x>
+      <y>306</y>
+      <w>189</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0;190.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>657</x>
+      <y>369</y>
       <w>27</w>
       <h>54</h>
     </coordinates>
-    <panel_attributes>lt=&lt;-
-group=1</panel_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>369</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>729</x>
+      <y>342</y>
+      <w>72</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Kelola
+Kelas
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>756</x>
+      <y>306</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>306</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>252</x>
+      <y>342</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Kelola Ujian
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>369</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>306</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>153</x>
+      <y>342</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Kelola Kuliah
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>189</x>
+      <y>369</y>
+      <w>27</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>171</x>
+      <y>396</y>
+      <w>126</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>126</x>
+      <y>306</y>
+      <w>171</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLSyncBarHorizontal</id>
+    <coordinates>
+      <x>126</x>
+      <y>396</y>
+      <w>171</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>{joinSpec=
+date is on or 
+after July 1st
+and the exam 
+is passed}</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
