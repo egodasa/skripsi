@@ -3,7 +3,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>354</x>
+      <x>408</x>
       <y>480</y>
       <w>132</w>
       <h>120</h>
@@ -27,7 +27,7 @@ status_mahasiswa : smallint
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>234</x>
+      <x>288</x>
       <y>480</y>
       <w>108</w>
       <h>120</h>
@@ -143,32 +143,6 @@ nm_jsoal : varchar(10)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>24</x>
-      <y>336</y>
-      <w>114</w>
-      <h>138</h>
-    </coordinates>
-    <panel_attributes>KelolaSoal
---
-id_soal : int(11)
-isi_soal : text
-pilihanGanda: Object
-id_jsoal: int
-bobot: smallint
-jawaban: text
---
-+getData()
-+getDataDetail(id: int)
-+cariData()
-+resetCariData()
-+submitData()
-+deleteData(id: int)
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
       <x>456</x>
       <y>264</y>
       <w>126</w>
@@ -226,7 +200,7 @@ jawaban: text
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>558</x>
+      <x>582</x>
       <y>480</y>
       <w>132</w>
       <h>108</h>
@@ -274,8 +248,8 @@ nm_mahasiswa: varchar(100)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>102</x>
-      <y>480</y>
+      <x>156</x>
+      <y>396</y>
       <w>126</w>
       <h>102</h>
     </coordinates>
@@ -296,15 +270,15 @@ nilai : smallint
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>468</x>
+      <x>522</x>
       <y>516</y>
-      <w>102</w>
+      <w>72</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1*
 m2=1</panel_attributes>
-    <additional_attributes>90;18;18;18</additional_attributes>
+    <additional_attributes>60;18;18;18</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
@@ -374,41 +348,28 @@ m2=1*</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>312</x>
+      <x>360</x>
       <y>420</y>
-      <w>156</w>
+      <w>108</w>
       <h>72</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1*</panel_attributes>
-    <additional_attributes>144;18;18;60</additional_attributes>
+    <additional_attributes>96;18;18;60</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>180</x>
+      <x>264</x>
       <y>378</y>
-      <w>288</w>
-      <h>114</h>
+      <w>204</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1*</panel_attributes>
-    <additional_attributes>276;18;18;102</additional_attributes>
-  </element>
-  <element>
-    <type>com.baselet.element.old.element.Relation</type>
-    <coordinates>
-      <x>120</x>
-      <y>366</y>
-      <w>102</w>
-      <h>90</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=1
-m2=1*</panel_attributes>
-    <additional_attributes>90;18;18;78</additional_attributes>
+    <additional_attributes>192;18;18;54</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -473,15 +434,15 @@ m2=1</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>672</x>
+      <x>696</x>
       <y>486</y>
-      <w>78</w>
+      <w>54</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1*</panel_attributes>
-    <additional_attributes>66;18;18;18</additional_attributes>
+    <additional_attributes>42;18;18;18</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>

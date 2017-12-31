@@ -308,18 +308,6 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>88</y>
-      <w>200</w>
-      <h>96</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>230.0;100.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>472</x>
       <y>192</y>
       <w>72</w>
@@ -358,11 +346,11 @@
       <x>304</x>
       <y>368</y>
       <w>144</w>
-      <h>40</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;.
 &lt;&lt;include&gt;&gt;</panel_attributes>
-    <additional_attributes>160.0;10.0;10.0;30.0</additional_attributes>
+    <additional_attributes>160.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -656,5 +644,28 @@
     <panel_attributes>lt=&lt;.
 &lt;&lt;include&gt;&gt;</panel_attributes>
     <additional_attributes>230.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>168</x>
+      <y>424</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Cetak Nilai</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>368</y>
+      <w>144</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;30.0</additional_attributes>
   </element>
 </diagram>
