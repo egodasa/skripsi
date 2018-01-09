@@ -196,27 +196,19 @@ id_soal : int(11)
     <id>UMLClass</id>
     <coordinates>
       <x>35</x>
-      <y>7</y>
+      <y>63</y>
       <w>154</w>
-      <h>189</h>
+      <h>91</h>
     </coordinates>
     <panel_attributes>Jawaban
 --
 id_ujian: int(11)
 id_jawaban: int(11)
 id_soal: int(11)
-infoUjian: Object
-posisiSoal: int
-totalBobot: int
-bobot: int
 nobp : varchar(15)
-nm_mahasiswa: varchar(100)
 --
-+getUjian()
 +getListJawaban()
-+showSoal(x: int)
-+simpanNilai()
-+simpanPeriksa()</panel_attributes>
++showSoal(x: int)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -225,14 +217,13 @@ nm_mahasiswa: varchar(100)
       <x>35</x>
       <y>210</y>
       <w>147</w>
-      <h>119</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>HasilUjian
 --
 id_hasil: int(11)
 id_ujian: varchar(40)
 nobp : varchar(15)
-nm_mahasiswa: varchar(100)
 nilai : smallint
 --
 +getData()
@@ -522,7 +513,6 @@ status_user : smallint
 --
 +getData()
 +cariData()
-+resetCariData()
 </panel_attributes>
     <additional_attributes/>
   </element>
