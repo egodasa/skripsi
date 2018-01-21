@@ -302,7 +302,7 @@
       <w>112</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>Kuliah</panel_attributes>
+    <panel_attributes>Kelola Kuliah</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -372,20 +372,8 @@
       <w>112</w>
       <h>32</h>
     </coordinates>
-    <panel_attributes>Ujian</panel_attributes>
+    <panel_attributes>Kelola Ujian</panel_attributes>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>280</x>
-      <y>136</y>
-      <w>168</w>
-      <h>64</h>
-    </coordinates>
-    <panel_attributes>lt=.&gt;
-&lt;&lt;extends&gt;&gt;</panel_attributes>
-    <additional_attributes>190.0;60.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLUseCase</id>

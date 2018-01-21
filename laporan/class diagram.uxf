@@ -6,11 +6,10 @@
       <x>707</x>
       <y>427</y>
       <w>154</w>
-      <h>140</h>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Mahasiswa
 --
-id_mahasiswa : int(11)
 nobp : varchar(15)
 nm_mahasiswa : varchar(100)
 status_mahasiswa : smallint
@@ -20,8 +19,7 @@ status_mahasiswa : smallint
 +cariData()
 +resetCariData()
 +submitData()
-+deleteData(id: int)
-</panel_attributes>
++deleteData(id: int)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -76,11 +74,10 @@ nm_kelas : varchar(10)
       <x>728</x>
       <y>224</y>
       <w>133</w>
-      <h>161</h>
+      <h>154</h>
     </coordinates>
     <panel_attributes>Matkul
 --
-id_matkul: int(11)
 kd_matkul: varchar(15)
 nm_matkul: varchar(100)
 sks: smallint
@@ -92,8 +89,7 @@ status_matkul : smallint
 +cariData()
 +resetCariData()
 +submitData()
-+deleteData(id: int)
-</panel_attributes>
++deleteData(id: int)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -195,8 +191,8 @@ id_soal : int(11)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>35</x>
-      <y>63</y>
+      <x>42</x>
+      <y>175</y>
       <w>154</w>
       <h>91</h>
     </coordinates>
@@ -214,8 +210,8 @@ nobp : varchar(15)
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>35</x>
-      <y>210</y>
+      <x>42</x>
+      <y>21</y>
       <w>147</w>
       <h>112</h>
     </coordinates>
@@ -342,15 +338,15 @@ m2=1</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>161</x>
+      <x>175</x>
       <y>231</y>
-      <w>146</w>
+      <w>132</w>
       <h>34</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1*
 m2=1</panel_attributes>
-    <additional_attributes>21;21;133;21</additional_attributes>
+    <additional_attributes>21;21;119;21</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
@@ -544,5 +540,18 @@ nm_juser : varchar(20)
 m1=1*
 m2=1</panel_attributes>
     <additional_attributes>322;21;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.baselet.element.old.element.Relation</type>
+    <coordinates>
+      <x>84</x>
+      <y>245</y>
+      <w>34</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1*
+m2=1</panel_attributes>
+    <additional_attributes>21;21;21;98</additional_attributes>
   </element>
 </diagram>
