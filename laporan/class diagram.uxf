@@ -32,8 +32,7 @@ status_mahasiswa : smallint
     </coordinates>
     <panel_attributes>Dosen
 --
-id_dosen : int(11)
-nidn : varchar(11)
+nidn : varchar(15)
 nm_dosen : varchar(100)
 status_dosen : smallint
 --
@@ -125,7 +124,7 @@ nm_jujian : varchar(10)
     <panel_attributes>JenisSoal
 --
 id_jsoal : int(11)
-nm_jsoal : varchar(10)
+nm_jsoal : varchar(20)
 --
 +getData()
 +getDataDetail(id: int)
@@ -194,17 +193,17 @@ id_soal : int(11)
       <x>42</x>
       <y>175</y>
       <w>154</w>
-      <h>91</h>
+      <h>98</h>
     </coordinates>
     <panel_attributes>Jawaban
 --
-id_ujian: int(11)
+id_ujian: varchar(60)
 id_jawaban: int(11)
 id_soal: int(11)
 nobp : varchar(15)
+jawaban : text
 --
-+getListJawaban()
-+showSoal(x: int)</panel_attributes>
++getListJawaban()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -233,20 +232,20 @@ nilai : smallint
     <coordinates>
       <x>532</x>
       <y>224</y>
-      <w>133</w>
+      <w>154</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>Kuliah
 --
 id_kuliah : varchar(40)
-kd_matkuk : varchar(15)
+kd_matkul : varchar(15)
 nidn : varchar(11)
 tahun_akademik : varchar(5)
+status_kuliah : smallint
 --
 +getData()
 +getDataDetail(id: int)
 +cariData()
-+resetCariData()
 +submitData()
 +deleteData(id: int)
 </panel_attributes>
@@ -263,7 +262,7 @@ tahun_akademik : varchar(5)
     <panel_attributes>KelasKuliah
 --
 id_kkuliah : int(11)
-id_kuliah : varchar(40)
+id_kuliah : varchar(60)
 id_kelas : int(11)
 --
 +getData()
@@ -279,16 +278,17 @@ id_kelas : int(11)
     <id>UMLClass</id>
     <coordinates>
       <x>490</x>
-      <y>427</y>
+      <y>406</y>
       <w>154</w>
-      <h>105</h>
+      <h>126</h>
     </coordinates>
     <panel_attributes>PesertaKuliah
 --
-id_peserta: int(11)
+id_peserta: varchar(60)
 nobp : varchar(15)
+id_kelas : int(11)
 id_kuliah varchar(40)
-status : Boolean
+status_peserta : smallint
 --
 +getData()
 +cariData()
@@ -308,8 +308,8 @@ status : Boolean
 --
 id_soal : int(11)
 isi_soal : text
-pilihanGanda: Object
-id_jsoal: int
+pilihanGanda: JSON
+id_jsoal: smallint
 bobot: smallint
 jawaban: text
 --
@@ -390,15 +390,15 @@ m2=1</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>546</x>
+      <x>539</x>
       <y>343</y>
-      <w>55</w>
-      <h>97</h>
+      <w>62</w>
+      <h>76</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1*
 m2=1</panel_attributes>
-    <additional_attributes>21;84;42;21</additional_attributes>
+    <additional_attributes>21;63;49;21</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
@@ -416,15 +416,15 @@ m2=1</panel_attributes>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
-      <x>644</x>
+      <x>665</x>
       <y>280</y>
-      <w>97</w>
+      <w>76</w>
       <h>34</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1*
 m2=1</panel_attributes>
-    <additional_attributes>21;21;84;21</additional_attributes>
+    <additional_attributes>21;21;63;21</additional_attributes>
   </element>
   <element>
     <type>com.baselet.element.old.element.Relation</type>
@@ -545,13 +545,13 @@ m2=1</panel_attributes>
     <type>com.baselet.element.old.element.Relation</type>
     <coordinates>
       <x>84</x>
-      <y>245</y>
+      <y>252</y>
       <w>34</w>
-      <h>111</h>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1*
 m2=1</panel_attributes>
-    <additional_attributes>21;21;21;98</additional_attributes>
+    <additional_attributes>21;21;21;91</additional_attributes>
   </element>
 </diagram>
